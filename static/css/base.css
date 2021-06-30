@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/* Navbar profile and basket */
 ul.list-inline.list-unstyled.text-center.my-0 {
     display: flex;
+}
+
+.dropdown-menu {
+    left: auto;
+}
+
+/* Navbar links */
+
+.navbar,
+.navbar a {
+    font-family: 'Roboto Mono', monospace;
+    color: #182602;
+}
+
+.navbar-toggler-icon {
+    background-color: red;
+}
+
+/* Navbar brand */
+
+.store-name {
+    font-family: 'Bebas Neue', cursive;
+    color: #000;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    text-decoration: none;
 }
