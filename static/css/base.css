@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
 /* Navbar profile and basket */
 ul.list-inline.list-unstyled.text-center.my-0 {
     display: flex;
@@ -12,16 +16,14 @@ ul.list-inline.list-unstyled.text-center.my-0 {
 
 /* Navbar links */
 
-.navbar,
-.navbar a {
+.navbar {
     font-family: 'Roboto Mono', monospace;
+}
+
+a,
+a:hover {
     color: #182602;
 }
-
-.navbar-toggler-icon {
-    background-color: red;
-}
-
 /* Navbar brand */
 
 .store-name {
