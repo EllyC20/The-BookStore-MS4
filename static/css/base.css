@@ -5,6 +5,16 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+hr {
+    color: yellow;
+    border: solid 1px;
+}
+
+
+.header-container {
+    padding-bottom: 260px;
+}
+
 /* Navbar profile and basket */
 ul.list-inline.list-unstyled.text-center.my-0 {
     display: flex;
@@ -15,7 +25,6 @@ ul.list-inline.list-unstyled.text-center.my-0 {
 }
 
 /* Navbar links */
-
 .navbar {
     font-family: 'Roboto Mono', monospace;
 }
@@ -24,12 +33,26 @@ a,
 a:hover {
     color: #182602;
 }
-/* Navbar brand */
 
+/* Navbar brand */
 .store-name {
     font-family: 'Bebas Neue', cursive;
     color: #000;
     letter-spacing: 0.2rem;
     font-size: 2.5rem;
     text-decoration: none;
+}
+
+/* Search bar */ 
+.search-icon {
+    color: #182602;
+}
+
+.form-inline {
+    flex-flow: nowrap;
+}
+
+/* Index page */ 
+.carousel-item {
+    height: 500px;
 }
