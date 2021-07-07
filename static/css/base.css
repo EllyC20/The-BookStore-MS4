@@ -5,9 +5,18 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+.content {
+    min-height: calc(80vh - 50px);
+}
+
 hr {
     color: yellow;
     border: solid 1px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(211, 211, 211, 0.5);
 }
 
 /* Navbar profile and basket */
@@ -25,7 +34,9 @@ ul.list-inline.list-unstyled.text-center.my-0 {
 }
 
 a,
-a:hover {
+a:hover,
+.btn,
+.btn:hover {
     color: #182602;
 }
 
@@ -84,9 +95,11 @@ a:hover {
 }
 
 @media screen and (min-width:200px) and (max-width:425px) {
-    .cta-btn {
+    .cta-btn,
+    .main-h1 {
         font-size: 1.5625rem;
     }
+
 }
 
 @media screen and (max-width: 600px) {
