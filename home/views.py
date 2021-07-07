@@ -11,3 +11,8 @@ def index(request):
 def returns(request):
     """ A view to return the returns page """
     return render(request, 'home/returns.html')
+
+
+def faq(request):
+    """ A view to return the FAQ page """
+    return render(request, 'home/faq.html')
