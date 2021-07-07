@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Bootstrap Accordion utilsed and modified https://getbootstrap.com/docs/4.6/components/collapse/-->
+<div class="container">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                How Long Do I Have To Return An Item?
+            </button>
+            </h2>
+        </div>
+    
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                You can return an item for up to 30 days, details of how to do so will be detailed in your package.
+            </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Do I Have To Pay To Return An Item?
+            </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                No, we cover the cost of returns. You can drop off a parcel at your Local Connect store or send it through your local post office using 
+                the provided free stamp.
+            </div>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                How Will I Recieve My Refund For Returned Items?
+            </button>
+            </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                Refunds will be made to the original payment method. These can take 5 - 7 working days to process.
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
