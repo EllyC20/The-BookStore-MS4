@@ -10,5 +10,20 @@
 {% endblock %}
 
 {% block content %}
-    {{ products }}
+<h1 class="main-h1 text-center">All Products</h1>
+    {% for product in products %}
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+            <div class="card">
+                <a href="">
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                <div class="card-body">
+                    <p>
+                        {{ product.name }} <br>
+                        {{ product.price }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %}
