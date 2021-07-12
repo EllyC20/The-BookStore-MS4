@@ -11,19 +11,27 @@
 
 {% block content %}
 <h1 class="main-h1 text-center">All Products</h1>
-    {% for product in products %}
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-            <div class="card">
-                <a href="">
-                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
-                </a>
-                <div class="card-body">
+<div class="container">
+    <div class="row">
+        {% for product in products %}
+            <div class="col-sm-4">
+                <div class="card">
+                    {% if product.image %}
+                    <a href="#">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="#">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
                     <p>
                         {{ product.name }} <br>
                         {{ product.price }}
                     </p>
                 </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
