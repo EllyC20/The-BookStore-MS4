@@ -95,8 +95,12 @@ a:hover,
 }
 
 .product-img {
-    max-height: 230px;
-    min-height: 230px;
+    max-height: 260px;
+    min-height: 260px;
+}
+
+.product-card {
+    margin-top: 1.5rem;
 }
 
 /* Media Queries */
