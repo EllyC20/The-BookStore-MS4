@@ -1,59 +1,253 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Bookshop
 
-Welcome EllyC20,
+![Am I Responsive Image]
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## Bookshop is a fictional online book and supplies store. The stores purpose is to sell books, and other materials. These  materials could include arts and crafts supplies, notebooks, school supplies or home office products. The store will allow the owner to make more sales by moving to an online platform. 
 
-## Gitpod Reminders
+#### The live website can be viewed [here]()
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<br>
 
-`python3 -m http.server`
+## Table Of Contents 
 
-A blue button should appear to click: _Make Public_,
+- <a href="#ux">UX</a>
+  - <a href="#user-stories">User Stories</a>
+  - <a href="#strategy">Strategy</a>
+  - <a href="#scope">Scope</a>
+  - <a href="#structure">Structure</a>
+- <a href="#database">Database Schema</a>
+- <a href="#wireframes">Wireframes</a>
+- <a href="#surface">Surface</a>
+- <a href="#crud">CRUD</a>
+- <a href="#features">Features</a>
+- <a href="#languages">Languages</a>
+- <a href="#testing">Testing</a>
+- <a href="#deployment">Deployment</a>
+- <a href="#credits">Credits</a>
 
-Another blue button should appear to click: _Open Browser_.
+<br>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<span id="ux"></span>
 
-A blue button should appear to click: _Make Public_,
+## UX 
 
-Another blue button should appear to click: _Open Browser_.
+<span id="user-stories"></span>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User Stories 
 
-To log into the Heroku toolbelt CLI:
+**As a New User**
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* I want to be able to use the site intuitively. 
+* I want to be able to search for products.
+* I want to be able to view the details of individual products.
+* I want to be able to order products by category.
+* I want to be able to add products to my basket and checkout, without an account.
+* I want to be shown messages throughout my journey through the site.
+* I want to be able to register an account.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+**As a Site Owner/Super User**
 
-## Updates Since The Instructional Video
+* I want to have a payment system implemented.
+* I want to be able to edit product details.
+* I want to be able to add new products.
+* I want to encourage returning users by having an easy to use site.
+* I want to have a contact form where users can send any questions.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+**As a Returning User/Signed In User**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* I want to be able to save my delivery address and information.
+* I want to have a personalised profile that shows any previous orders.
+* I want to be able to log in to a previously registered profile. 
+* I want to be able to leave reviews for products.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<span id="strategy"></span>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### 1.Strategy 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+**Project Purpose**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+*  An ecommerce site where users can purchase products.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<span id="scope"></span>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### 2.Scope
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* Fits in with my current skill-set of HTML, CSS, JavaScript, Python and Django.
 
----
+<span id="structure"></span>
 
-Happy coding!
+### 3.Structure
+
+**As A New User (Not Logged In)**
+
+
+**As A Registered User (Logged In)** 
+
+
+**As Superuser (Site Owner)**
+ 
+
+**For All Users**
+
+
+<span id="database"></span>
+
+**Database Schema** 
+
+
+<span id="wireframes"></span>
+
+### 4.Skeleton
+
+**An inital layout of the file structure can be seen here.**
+
+![ReadmeImage](readme_images/file_structure.jpeg)
+
+ **Desktop wireframes can be viewed [here]()**
+
+ **Mobile wireframes can be viewed [here]()** 
+
+ **Tablet or medium device sizes can be viewed [here]()**
+
+ **When viewing the wireframes there are some changes that should be noted, they are detailed below.**
+
+<span id="surface"></span>
+
+### 5.Surface
+
+**Colours**
+
+**Font**
+
+**Images**
+
+<br>
+
+## Features 
+
+<span id="crud"></span>
+
+### CRUD 
+
+**Create** 
+
+<br>
+
+**Read** 
+
+
+<br>
+
+**Update**
+
+<br>
+
+**Delete**
+
+<br>
+
+<span id="features"></span>
+
+### Current Features 
+
+### Feautures To Be Implemented
+
+<br>
+
+<span id="languages"></span>
+
+## Languages Used 
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) 
+  -  Used for basic content structure.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) 
+  - Used for styling content.
+* [Python](https://www.python.org/) 
+  - Used to implement backend development. 
+* [jQuery](https://jquery.com/)
+  - Used to initialize interactive features.
+
+## Frameworks, Libaries & Other Tools Used 
+
+* [Gitpod](https://www.gitpod.io/)
+  - For development of the project.
+* [Github](https://github.com/)
+  - Used to store the project.
+* [Git](https://git-scm.com/)
+  - Used for version control.
+* [Google Fonts](https://fonts.google.com/)
+  - To implement the fonts used.
+* [TinyPng](https://tinypng.com/)
+  - To compress image sizes.
+* [Balsamiq](https://balsamiq.com/)
+  - To design wireframes.
+* [Heroku](https://id.heroku.com/)
+  - Cloud platform to deploy the project.
+* [Coolors](https://coolors.co/palettes/trending)
+  - To visualise a colour scheme.
+* [Font Awesome](https://fontawesome.com/)
+  - For any icons within the site.
+* [cdnjs](https://cdnjs.com/)
+  - To get Font Awesome linked.
+* [Lucidchart](https://www.lucidchart.com/pages/) 
+  - For images used in "Structure" section of README.
+* [Am I Responsive](http://ami.responsivedesign.is/) 
+  - For the image showing the site at the top of this README.
+
+<br>
+
+<span id="testing"></span>
+
+## Testing 
+
+All testing detail can be found [here.]() 
+
+<span id="deployment"></span>
+
+## Deployment 
+
+### To Clone 
+
+* The project can be run locally by cloning or downloading.
+* Open the repositorie and click "Code", then select either "clone" or "download". 
+* If you choose to clone you will be provided with a URL. Copy the URL from the "Clone with HTTPS" section.
+* In your IDE, open Git Bash.
+* Type Git Clone and then paste the URL you copied.
+* Press enter and this will create the clone.
+* If you choose to download, you will be given a zip file which can be unzipped locally. 
+* These files can then be uploaded to your IDE. 
+
+### Heroku Deployment 
+
+**Prior to running Heroku, set up your workspace.**
+
+* To do this, create a **requirements.txt** file to store the project dependencies. In the CLI type <code>pip freeze --local > requirements.txt</code>
+
+* Create a **Procfile**, this is so Heroku knows which file is the entry point. In the CLI type <code>python app.py > Procfile</code>
+
+* Vist [Heroku](https://id.heroku.com/login) and create a free account.
+
+* From the dashboard click the "new" button and create a new app. Name your app and select your region.
+
+* For GitHub deployment, go to the "deploy" section within Heroku.
+  - Search your repositorie name, when it is found click "connect".
+
+* In the "settings", choose "config vars". Click on "Reveal config vars" then enter the variables contained in your **env.py** file.
+  - These include "".
+
+* In the "deploy" section, scroll down to "automatic deployments" choose "enable automatic deploys" and then click "deploy branch".
+
+* Finally click "open app" and the app will be launched. 
+
+<br>
+
+<span id="credits"></span>
+
+## Credits 
+
+### Content 
+
+### Media 
+
+### Acknowledgements
