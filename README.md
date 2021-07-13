@@ -1,8 +1,8 @@
-# Bookshop
+# The Book Store
 
 ![Am I Responsive Image]
 
-## Bookshop is a fictional online book and supplies store. The stores purpose is to sell books, and other materials. These  materials could include arts and crafts supplies, notebooks, school supplies or home office products. The store will allow the owner to make more sales by moving to an online platform. 
+## The Book Store is a fictional online book and supplies store. The stores purpose is to sell books, and other materials. These  materials could include arts and crafts supplies, notebooks, school supplies or home office products. The store will allow the owner to make more sales by moving to an online platform. 
 
 #### The live website can be viewed [here]()
 
@@ -104,11 +104,11 @@
 
 ![ReadmeImage](readme_images/file_structure.jpeg)
 
- **Desktop wireframes can be viewed [here]()**
+ **Desktop wireframes can be viewed [here](https://github.com/EllyC20/The-BookStore-MS4/tree/master/readme_images/wireframes/lg-device)**
 
- **Mobile wireframes can be viewed [here]()** 
+ **Mobile wireframes can be viewed [here](https://github.com/EllyC20/The-BookStore-MS4/tree/master/readme_images/wireframes/sm-device)** 
 
- **Tablet or medium device sizes can be viewed [here]()**
+ **Tablet or medium device sizes can be viewed [here](https://github.com/EllyC20/The-BookStore-MS4/tree/master/readme_images/wireframes/md-device)**
 
  **When viewing the wireframes there are some changes that should be noted, they are detailed below.**
 
