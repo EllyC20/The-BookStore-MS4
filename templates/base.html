@@ -59,12 +59,12 @@
                                     Categories
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Childrens</a>
-                                    <a class="dropdown-item" href="#">Health</a>
-                                    <a class="dropdown-item" href="#">Food & Drink</a>
-                                    <a class="dropdown-item" href="#">Crime & Thriller</a>
-                                    <a class="dropdown-item" href="#">Science & Geography</a>
-                                    <a class="dropdown-item" href="#">Office Supplies</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=childrens">Childrens</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=health">Health</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=food_drink">Food & Drink</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=crime_thriller">Crime & Thriller</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=science_geography">Science & Geography</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=office_supplies">Office Supplies</a>
                                 </div>
                             </li>
                             <li class="nav-item">
