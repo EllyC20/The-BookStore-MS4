@@ -27,7 +27,7 @@ def all_products(request):
                 messages.error(request, "Please enter a search query!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(author__icontains=query)
             products = products.filter(queries)
 
     # Pagination

@@ -34,6 +34,7 @@
     <title>The BookStore</title>
 </head>
 <body>
+    <!-- Brand Name -->
     <header class="container-fluid">
         <div class="row">
             <div class="col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -41,6 +42,7 @@
                     <h2 class="my-0 store-name">The Book Store</h2>
                 </a>
             </div>
+            <!-- Navbar -->
             <div class="col-lg-4 col-6 my-auto py-1 py-lg-0">
                 <nav class="navbar navbar-expand-lg">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -56,6 +58,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <!-- Categories drop down menu -->
                                     Categories
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -68,6 +71,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
+                                <!-- Contact modal -->
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
                         </ul>
@@ -80,6 +84,7 @@
                         <a class="nav-link" id="user-options" data-toggle="dropdown" arira-haspopup="true"
                             aria-expanded="false" href="#">
                             <div class="text-center">
+                                <!-- User Options -->
                                 <div><i class="far fa-user"></i></div>
                                 <p class="my-0">Account</p>
                             </div>
@@ -102,6 +107,7 @@
                             class="{% if grand_total %}text-info font-weight-bold{% else %}text-black {% endif %} nav-link">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag"></i></div>
+                                <!-- Shopping Bag -->
                                 <p class="my-0">
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
@@ -117,6 +123,7 @@
         </div>
         <hr>
         <div class="row">
+            <!-- Search function -->
             <div class="col d-flex justify-content-center">
                 <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
                     <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
@@ -139,7 +146,7 @@
 
     {% block content %}
     {% endblock %}
-
+    <!-- Footer -->
     <footer class="mt-auto py-3">
         <div class="container text-center">
           <span>

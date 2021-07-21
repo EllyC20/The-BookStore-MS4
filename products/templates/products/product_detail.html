@@ -10,10 +10,12 @@
 {% endblock %}
 
 {% block content %}
+<!-- Opening H1-->
 <h1 class="main-h1 text-center">Product Detail</h1>
 <div class="container main">
     <div class="row">
         <div class="col-md-4 col-sm-12">
+            <!-- Image -->
             {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
                     <img class="card-img-top product-img img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -24,6 +26,7 @@
                 </a>
             {% endif %}
         </div>
+        <!-- Product Details -->
         <div class="col-md-8 col-sm-12">
             <div class="product-details">
                 <h1 class="product-h1">{{ product.name }}</h1>

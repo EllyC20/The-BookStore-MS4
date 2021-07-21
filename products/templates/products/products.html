@@ -10,12 +10,15 @@
 {% endblock %}
 
 {% block content %}
+<!-- Opening H1 -->
 <h1 class="main-h1 text-center">All Products</h1>
 <div class="container main">
     <div class="row">
         {% for product in items %}
             <div class="col-md-4 col-lg-3">
+                <!-- Product Card -->
                 <div class="card product-card">
+                    <!-- Product Image -->
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top product-img img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -25,13 +28,18 @@
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                     {% endif %}
+                    <!-- Product Details -->
                     <h1 class="product-h1">{{ product.name }}</h1>
-                    <p class="muted">{{ product.author }} <span>€{{ product.price }}</span></p>
+                    {% if product.author %}
+                    <p class="muted">{{ product.author }}</p>
+                    {% endif %}
+                    <span>€{{ product.price }}</span>
                 </div>
             </div>
         {% endfor %}
     </div>
     <hr>
+    <!-- Pagination -->
     <div class="text-center pagination-div">
         {% if items.has_previous %}
             <a href="?page=1">&laquo; First</a>
