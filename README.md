@@ -41,9 +41,11 @@
 * I want to be able to search for products.
 * I want to be able to view the details of individual products.
 * I want to be able to order products by category.
+* I want to be able to order products by finer details such as A-Z, price low to high or vice versa. 
 * I want to be able to add products to my basket and checkout, without an account.
 * I want to be shown messages throughout my journey through the site.
 * I want to be able to register an account.
+* I want have the functionality to save my shipping details. 
 
 **As a Site Owner/Super User**
 
@@ -55,7 +57,7 @@
 
 **As a Returning User/Signed In User**
 
-* I want to be able to save my delivery address and information.
+* I want to be able to edit my delivery address and information.
 * I want to have a personalised profile that shows any previous orders.
 * I want to be able to log in to a previously registered profile. 
 * I want to be able to leave reviews for products.
@@ -65,9 +67,17 @@
 
 ### 1.Strategy 
 
-**Project Purpose**
+**Project Goals**
 
-*  An ecommerce site where users can purchase products.
+* To make a full-stack site based around business logic used to control a centrally-owned database.
+* To make a full-stack site that uses HTML, CSS, JavaScript, Python + Django.
+* Creating a website that uses a relational database.
+* Creating a website that uses Stripe payments.
+
+**Site Owner Goals(Business Goals)**
+
+* Creating a secure, professional and profitable e-commerce website.
+* Inspire users to read more or read new books.
 
 <span id="scope"></span>
 
@@ -81,15 +91,37 @@
 
 **As A New User (Not Logged In)**
 
+A new user can visit:
+  * The home page
+  * Can access the register and login pages 
+  * The products page
+  * Specific category pages
+  * The basket
+  * The checkout
+  * Contact form
+
 
 **As A Registered User (Logged In)** 
-
+A returning user can visit:
+  * The home page
+  * Can access the log out functionality
+  * Profile
+  * The products page
+  * Specific category pages
+  * The basket
+  * The checkout
+  * Contact form
 
 **As Superuser (Site Owner)**
- 
-
-**For All Users**
-
+A superuser can visit:
+  * The home page
+  * Can access the log out functionality
+  * Profile
+  * The products page
+  * Specific category pages
+  * The basket
+  * The checkout
+  * Contact form
 
 <span id="database"></span>
 
@@ -246,8 +278,14 @@ All testing detail can be found [here.]()
 
 ## Credits 
 
-### Content 
+### Content
+
+* The description of the books on the product details page are taken from [Book Depository](https://www.bookdepository.com/)
 
 ### Media 
+
+* The stationary images (Office Supplies) are taken from [Pixabay](https://pixabay.com/)
+* The book cover images are taken from a dataset on [Kaggle](https://www.kaggle.com/lukaanicin/book-covers-dataset)
+* The home page carousel images are from [Pixabay](https://pixabay.com/)
 
 ### Acknowledgements
