@@ -233,7 +233,7 @@ A superuser can visit:
 
 ## Testing 
 
-All testing detail can be found [here.]() 
+All testing detail can be found [here.](https://github.com/EllyC20/The-BookStore-MS4/blob/master/TESTING.md) 
 
 <span id="deployment"></span>
 
