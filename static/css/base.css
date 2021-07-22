@@ -108,6 +108,10 @@ a:hover,
     margin-top: 1.5rem;
 }
 
+.category-name {
+    text-decoration: underline;
+}
+
 /* Media Queries */
 @media screen and (max-width: 2560px) {
     .header-container {
