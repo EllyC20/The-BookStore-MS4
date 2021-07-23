@@ -92,6 +92,11 @@ a:hover,
     margin: 2rem;
 }
 
+.banner-message {
+    background-color: lightgreen;
+}
+/* Contact page */
+
 /* Product page */ 
 .product-h1 {
     font-family: 'Bebas Neue', cursive;
