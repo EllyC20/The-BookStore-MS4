@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="main-h1">Shopping Bag</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                    <div class="table-responsive">
+
+                    </div>
+                {% else %}
+                    <p>Your bag is empty.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
