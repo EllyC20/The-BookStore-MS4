@@ -16,3 +16,8 @@ def returns(request):
 def faq(request):
     """ A view to return the FAQ page """
     return render(request, 'home/faq.html')
+
+
+def contact(request):
+    """ A view to return the contact page """
+    return render(request, 'home/contact.html')
