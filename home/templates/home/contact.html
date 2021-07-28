@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <h1 class="main-h1 text-center">Get In Contact</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 contact-form" style="background-color: yellow;">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email Address</label>
+                      <input type="email" class="form-control" pattern="[a-zA-Z0-9]+[a-zA-Z0-9 ]+" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Your Name</label>
+                        <input type="text" class="form-control" pattern="[a-zA-Z0-9]+[a-zA-Z0-9 ]+" id="exampleFormControlInput1" placeholder="Your Name">
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Tell Us Anything!</label>
+                      <textarea class="form-control" pattern="[a-zA-Z0-9]+[a-zA-Z0-9 ]+" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <button class=""><a href="">Submit</a></button>
+                    <button class=""><a href="">Cancel</a></button>
+                </div>
+            </div>
+            <div class="col-sm-6" style="background-color: teal;">
+                <h1 class="product-h1">Our Details</h1>
+                <p class="product-h1">You Can Visit Us Here</p>
+                <p>
+                    6 Roscommon Town
+                    Roscommon
+                </p>
+                <p class="product-h1">Or You Can Ring Us Here</p>
+                <p>
+                    085 123 4567
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
