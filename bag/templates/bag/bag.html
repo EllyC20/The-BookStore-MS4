@@ -10,22 +10,36 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 class="main-h1">Shopping Bag</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                {% if bag_items %}
-                    <div class="table-responsive">
+<h1 class="main-h1 text-center">Shopping Bag</h1>
+{% if bag_items %}
+<div class="table-container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="product-h1">Product Info</th>
+                <th class="product-h1">Name</th>
+                <th class="product-h1">Qty</th>
+                <th class="product-h1">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in bag_items %}
+                <tr>
+                    <td data-label="product-img" class="w-25"><img src="{{ item.product.image.url }}" alt=""></td>
+                    <td data-label="product-name">{{ item.product.name }}</td>
+                    <td data-label="product-quantity">{{ item.quantity }}</td>
+                    <td data-label="product-price">€{{ item.product.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+    <p class="text-center">Your bag is empty.</p>
+    <a href="{% url 'products' %}" class="text-center"><button class="btn btn-large border-1">Return To All Products</button></a>
+{% endif %}
+</div>
+{% endblock %}
 
-                    </div>
-                {% else %}
-                    <p>Your bag is empty.</p>
-                {% endif %}
-            </div>
-        </div>
-    </div>
+{% block postloadjs %}
 {% endblock %}
