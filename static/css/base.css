@@ -97,6 +97,27 @@ a:hover,
 }
 /* Contact page */
 
+/* Bag */
+.table-container {
+    padding: 0 10%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+@media (max-width: 425px) {
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+}
+
+
 /* Product page */ 
 .product-h1 {
     font-family: 'Bebas Neue', cursive;
@@ -137,13 +158,6 @@ transition: all 0.2s;
 .product-detail-btn:hover {
     color: #000000;
     background-color: yellow;
-}
-
-@media all and (max-width:30em) {
-    a.button1 {
-        display: block;
-        margin: 0.4em auto;
-    }
 }
 
 /* Media Queries */
