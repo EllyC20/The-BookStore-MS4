@@ -27,12 +27,37 @@
                 <tr>
                     <td data-label="product-img" class="w-25"><img src="{{ item.product.image.url }}" alt=""></td>
                     <td data-label="product-name">{{ item.product.name }}</td>
-                    <td data-label="product-quantity">{{ item.quantity }}</td>
+                    <td data-label="product-quantity">
+                        <form action="" method="POST" class="update-form">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <div class="input-group-prepend">
+                                    <button class="decrement-qty btn" data-item-id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                        <span>
+                                            <i class="fas fa-minus"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <input type="number" class="form-control qty_input" name="quantity" value="1" min="1" max="30" data-item-id="{{ product.id }}"
+                                id="id_qty_{{ product.id }}">
+                                <div class="input-group-append">
+                                    <button class="increment-qty btn" data-item-id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                        <span>
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
                     <td data-label="product-price">€{{ item.product.price }}</td>
                 </tr>
             {% endfor %}
         </tbody>
     </table>
+    <div class="checkout-btn text-right">
+        <a href=""><button>Checkout</button></a>
+    </div>
 </div>
 {% else %}
     <p class="text-center">Your bag is empty.</p>
