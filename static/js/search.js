@@ -1,3 +1,4 @@
+// CREDIT CODE INSTITUTE BOUTIQUE ADO PROJECT
 $('#sort-selector').change(function() {
     var selector = $(this);
     var currentUrl = new URL(window.location);
