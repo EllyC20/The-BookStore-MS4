@@ -23,7 +23,7 @@
 
     <!-- Bootstrap JS and jQuery-->
     {% block corejs %}
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d1afe41476.js" crossorigin="anonymous"></script>
     {% endblock %}
@@ -43,7 +43,7 @@
                 </a>
             </div>
             <!-- Navbar -->
-            <div class="col-lg-4 col-6 my-auto py-1 py-lg-0">
+            <div class="col-lg-4 col-6 my-auto py-1 py-lg-0 mobile-div-one">
                 <nav class="navbar navbar-expand-lg">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -72,13 +72,13 @@
                             </li>
                             <li class="nav-item">
                                 <!-- Contact modal -->
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
-            <div class="col-lg-4 my-auto col-6 py-1 py-lg-0">
+            <div class="col-lg-4 my-auto col-6 py-1 py-lg-0 mobile-div-two">
                 <ul class="list-inline list-unstyled text-center my-0 d-flex justify-content-end">
                     <li class="list-inline-dropdown">
                         <a class="nav-link" id="user-options" data-toggle="dropdown" arira-haspopup="true"
@@ -103,7 +103,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#"
+                        <a href="{% url 'view_bag' %}"
                             class="{% if grand_total %}text-info font-weight-bold{% else %}text-black {% endif %} nav-link">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag"></i></div>
@@ -112,7 +112,7 @@
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                    €0.00
+                                        €0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -126,7 +126,7 @@
             <!-- Search function -->
             <div class="col d-flex justify-content-center">
                 <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
-                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="text" pattern="[a-zA-Z0-9]+[a-zA-Z0-9 ]+" name="q" placeholder="Search" aria-label="Search">
                     <button class="btn my-2" type="submit">
                         <span class="search-icon">
                             <i class="fas fa-search"></i>
@@ -155,8 +155,8 @@
                 <a href="{% url 'returns' %}">Returns</a>
             </div>
             <div class="col-sm-4">
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
             </div>
             <div class="col-sm-4">
                 <a href="{% url 'faq' %}">FAQ</a>
