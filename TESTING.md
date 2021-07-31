@@ -11,7 +11,13 @@
     * CONTACT FORM TO BE COMPLETED.
  ## User And Basket 
  
- TO BE COMPLETED 
+### Testing The Basket
+* When a user first visits the site they should see the basket icon and as they haven't added any items to the basket yet, it should be empty and this should be represented by a value of 0.00. To test this I visited the site and visually inspected. This confirmed the expected results. 
+    * At this point if a user clicks the basket icon, they should be taken to the bag page and shown a message that says the bag is empty. They should also be provided with a button to go shop all products. To test this I visited the site and visually inspected. This confirmed the expected results. 
+* When a user adds something to the basket, the value of 0.00 should change to reflect the item price plus postage if applicable. To test this I added an item to the basket and observed the results. This confirmed the anticipated results. 
+    * From here if the user clicks the basket icon, they should be taken to the bag page. Within the bag page the items added to the basket should be shown. This information should include a product image, product name, the quantity chosen and a price. To test this I added three items to the basket with varying quantities. I visually inspected the site and this confirmed the expected results.
+* Within the bag page there should the option to edit the quantity or remove the item entirely. To test this I visited the bag and altered the quantity by choosing a different quantity to the one initially added. This confirmed the expected update to the quantity, subtotal and total price. 
+* To test the remove function, I clicked the red remove button. This confirmed the expected result of the item being removed from the bag.
 
  ## Testing the "CTA" (call to action) button
  * On the homepage there is a button shown on the carousel. The button says "Shop Now" and when clicked should take the user to the "All Products" page. I tested this by using a laptop, Ipad and mobile device and physically clicking the button. By doing this I confirmed the expected results.
