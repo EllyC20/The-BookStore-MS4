@@ -112,6 +112,11 @@ a:hover,
         margin-bottom: 15px;
 }
 
+.update-link, 
+.remove-item {
+    cursor: pointer;
+}
+
 /* Product page */ 
 .product-h1 {
     font-family: 'Bebas Neue', cursive;
