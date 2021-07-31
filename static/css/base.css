@@ -97,6 +97,7 @@ a:hover,
 }
 /* Contact page */
 
+
 /* Bag */
 .table-container {
     padding: 0 10%;
@@ -107,16 +108,9 @@ a:hover,
     border-collapse: collapse;
 }
 
-@media (max-width: 425px) {
-    .table thead{
-        display: none;
-    }
-    .table, .table tbody, .table tr, .table td {
-        display: block;
-        width: 100%;
-    }
+.checkout-btn a button {
+        margin-bottom: 15px;
 }
-
 
 /* Product page */ 
 .product-h1 {
@@ -163,7 +157,7 @@ transition: all 0.2s;
 /* Media Queries */
 @media screen and (max-width: 2560px) {
     .header-container {
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
 }
 
@@ -179,5 +173,15 @@ transition: all 0.2s;
     nav {
       position: fixed;
       z-index: 5;
+    }
+}
+/* For responsive table within basket */
+@media screen and (max-width: 425px) {
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
     }
 }
