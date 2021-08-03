@@ -112,6 +112,10 @@ a:hover,
         margin-bottom: 15px;
 }
 
+.bag-img {
+    max-height: 240px;
+}
+
 .update-link, 
 .remove-item {
     cursor: pointer;
