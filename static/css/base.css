@@ -163,6 +163,22 @@ transition: all 0.2s;
     background-color: yellow;
 }
 
+/* Toasts */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 2560px) {
     .header-container {
