@@ -19,6 +19,14 @@
 * Within the bag page there should the option to edit the quantity or remove the item entirely. To test this I visited the bag and altered the quantity by choosing a different quantity to the one initially added. This confirmed the expected update to the quantity, subtotal and total price. 
 * To test the remove function, I clicked the red remove button. This confirmed the expected result of the item being removed from the bag.
 
+## Checkout 
+
+* When a user has items in the basket, the checkout button should be available. Upon clicking this they should be taken to a checkout page displaying a form to be filled in by the user for delivery details. To check this I added an item to my basket and visited the basket page. From here I could see the checkout button, upon clicking this provided the expected results.
+
+### Checkout Form 
+
+TESTING TO BE COMPLETED. 
+
  ## Testing the "CTA" (call to action) button
  * On the homepage there is a button shown on the carousel. The button says "Shop Now" and when clicked should take the user to the "All Products" page. I tested this by using a laptop, Ipad and mobile device and physically clicking the button. By doing this I confirmed the expected results.
 
