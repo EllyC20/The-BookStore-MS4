@@ -25,3 +25,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):
+    review = models.ForeignKey(Product, related_name="reviews", on_delete=models.CASCADE)
+    name = models.CharField(max_length=300)
+    body = models.TextField()
+
+    def __str___(self):
+        return self.name
