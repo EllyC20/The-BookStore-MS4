@@ -48,3 +48,7 @@ TESTING TO BE COMPLETED.
 * The search function should check the name of the book, the name of the author and also the description for the key word. 
     * I checked this was working by typing the name "Stephen" this gave two results of books both written by an author with the name Stephen. 
     * I then checked the description by using the word "learn", this gave one result and the word learn was within the description of this book.
+
+## Problems Encountered
+
+* I encountered an error message from Gitpod upon trying to open my workspace that said "Last backup failed: workspace content was never ready." Within Github I could see the work committed along with a commit message but Gitpod did not recognise it. With the help of tutor support we managed to get the work back by undoing changes made, restoring files and finally a pull request. This ensured all work was up to date with the most recent commit. 
