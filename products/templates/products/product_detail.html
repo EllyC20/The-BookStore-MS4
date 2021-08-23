@@ -34,11 +34,11 @@
                 <p>{{ product.description }}</p>
                 <h1 class="product-h1">€{{ product.price }}</h1>
                 <hr>
-                <!-- Review/comment section -->
+                <!-- Review section -->
                 <h1 class="product-h1">Reviews</h1>
                 <p>
                     {% if not product.reviews.all %}
-                        No Reviews Yet!
+                        No Reviews Yet!<br>
                     {% else %}
                         {% for review in product.reviews.all %}
                             <strong>By {{ review.name }}:</strong>
@@ -46,7 +46,25 @@
                         {% endfor %}
                     {% endif %}
                 </p>
+                <small><a href="{% url 'add_review' product.id %}" class="text-success">Add A Review</a></small>
                 <hr>
+                
+                <!-- Review section 
+                <h1 class="product-h1">Reviews</h1>
+                <p>
+                    {% if review_obj%}
+                    {% for review in review_obj%}
+                    {% if review.product_id == product.id%}
+                    <strong>By {{ review.name }}:</strong>
+                            {{ review.body }}<br>
+                    {%endif%}
+                    {%endfor%}
+                    {%endif%}
+                </p>
+                <small><a href="{% url 'add_review' product.id %}" class="text-success">Add A Review</a></small>
+                <hr>
+                -->
+               
                 <input type="submit" class="product-detail-btn" value="Add To Wishlist">
             </div>
             <form action="{% url 'add_to_bag' product.id %}" method="POST">
