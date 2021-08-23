@@ -27,17 +27,6 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-"""
-class Review(models.Model):
-    product = models.ForeignKey(Product, null=True, blank=True, related_name="reviews", on_delete=models.CASCADE)
-    name = models.CharField(max_length=300)
-    body = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.name
-"""
-
 
 class ProductReview(models.Model):
     """
