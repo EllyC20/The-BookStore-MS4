@@ -40,10 +40,12 @@
                     {% if not product.reviews.all %}
                         No Reviews Yet!<br>
                     {% else %}
-                        {% for review in product.reviews.all %}
-                            <strong>By {{ review.name }}:</strong>
-                            {{ review.body }}<br>
-                        {% endfor %}
+                        <div class="review-detail">
+                            {% for review in product.reviews.all %}
+                                <strong>By {{ review.user.username }}:</strong>
+                                <p>{{ review.content }}</p>
+                            {% endfor %}
+                        </div>
                     {% endif %}
                 </p>
                 <!--<small><a href="{% url 'add_review' product.id %}" class="text-success">Add A Review</a></small>-->
@@ -52,7 +54,7 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-right">
-                        <button class="btn btn-info font-weight-bold" type="submit">Submit Review</button>
+                        <button class="product-detail-btn" type="submit">Submit Review</button>
                     </div>
                 </form>
                 <hr>
