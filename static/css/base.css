@@ -15,14 +15,13 @@ body {
 }
 
 hr {
-    color: yellow;
+    color: #ffff00;
     border: solid 1px;
 }
 
 /* Footer */
 footer {
-    background-color: rgba(211, 211, 211, 0.5);
-    margin-top: 30px;
+    background-color: #d3d3d380;
 }
 
 /* Navbar profile and basket */
@@ -49,7 +48,7 @@ a:hover,
 /* Navbar brand */
 .store-name {
     font-family: 'Bebas Neue', cursive;
-    color: #000;
+    color: #000000;
     letter-spacing: 0.2rem;
     font-size: 2.5rem;
     text-decoration: none;
@@ -81,14 +80,15 @@ a:hover,
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     z-index: 999;
-    border: 4px solid black;
-    background-color: yellow;
+    border: 2px solid #000000;
+    background-color: #90ee90;
     font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;;
 }
 
 .main-h1 {
     font-family: 'Bebas Neue', cursive;
-    color: #000;
+    color: #000000;
     font-size: 3rem;
     margin: 2rem;
 }
@@ -125,7 +125,7 @@ a:hover,
 /* Product page */ 
 .product-h1 {
     font-family: 'Bebas Neue', cursive;
-    color: #000;
+    color: #000000;
     font-size: 1.5rem;
 }
 
@@ -147,7 +147,7 @@ a:hover,
 .product-detail-btn {
 display:inline-block;
 padding:0.35em 1.2em;
-border:0.1em solid #FFFFFF;
+border:0.1em solid #ffffff;
 margin:0 0.3em 0.3em 0;
 border-radius:0.12em;
 box-sizing: border-box;
@@ -161,7 +161,7 @@ transition: all 0.2s;
 
 .product-detail-btn:hover {
     color: #000000;
-    background-color: yellow;
+    background-color: #ffff00;
 }
 
 .review-div {
