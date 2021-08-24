@@ -150,6 +150,10 @@ A superuser can visit:
 
 **Colours**
 
+* I kept the colours of the site, consistent and subtle. None of the colours are too extreme, the colours flow together nicely and allow easy use of the site without overwhelming the user. 
+
+![Colours](readme_images/ms4_colours.png)
+
 **Font**
 
 **Images**
