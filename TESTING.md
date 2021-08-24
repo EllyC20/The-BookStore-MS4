@@ -9,6 +9,7 @@
     * When clicking "All Products" I expect to be shown the products page which displays all products within the database. I tested this using a laptop, Ipad and mobile device and physically clicking the navigational link. I cross referenced the products with the database to confirm all were present. This confirmed all expected results.
     * When clicking "Categories" I expect to be shown a drop down menu featuring all of the categories listed within the database. I checked this by visiting the database and cross referencing the shown results. I tested this using a laptop, Ipad and mobile device and physically clicking the navigational link. This confirmed the expected results.
     * CONTACT FORM TO BE COMPLETED.
+
  ## User And Basket 
  
 ### Testing The Basket
@@ -25,12 +26,17 @@
 
 ### Checkout Form 
 
-TESTING TO BE COMPLETED. 
+* Once the above step in checkout has been taken, and the user clicks the "checkout" button from the basket page. The user should then be taken to checkout where a form is available. The form needs to be filled out for the user to proceed further, I checked this by not completing all fields and clicking checkout. This action is not allowed.
+* When the user has correctly populated the form information, they will then be asked for card details. For testing purposes with Stripe I used the card number "4242 4242 4242 4242" which doesn't require authentication. 
+    * This card number is correctly allowed and a loading overlay is shown to the user, from here they are given confirmation of their order details. 
+* To test Stripes authentication is required function, I used the card number 4000 0027 6000 3184. This loaded an authentication screen where the user can choose fail authentication or pass authentication. Choosing either choice results in the expected results. 
+    * If a user fails authentication, they are shown an appropiate error message at card details.
+    * If a user passes authentication, the checkout process continues as anticipated. 
 
- ## Testing the "CTA" (call to action) button
+ ## Testing the "CTA" (call to action) button on Home page
  * On the homepage there is a button shown on the carousel. The button says "Shop Now" and when clicked should take the user to the "All Products" page. I tested this by using a laptop, Ipad and mobile device and physically clicking the button. By doing this I confirmed the expected results.
 
- ## Recently Added
+## Profile 
 
  ## Footer 
  * Within the Footer, there are 2 navigational options for within the website and 2 social media icons. 
@@ -52,3 +58,20 @@ TESTING TO BE COMPLETED.
 ## Problems Encountered
 
 * I encountered an error message from Gitpod upon trying to open my workspace that said "Last backup failed: workspace content was never ready." Within Github I could see the work committed along with a commit message but Gitpod did not recognise it. With the help of tutor support we managed to get the work back by undoing changes made, restoring files and finally a pull request. This ensured all work was up to date with the most recent commit. 
+
+## Responsiveness 
+
+### Home Page 
+
+### Products 
+
+### Product Detail 
+
+### Contact 
+
+### FAQ 
+
+### Returns 
+
+### Profile 
+
