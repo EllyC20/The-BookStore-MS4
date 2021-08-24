@@ -73,7 +73,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <!-- Contact modal -->
+                                <!-- Contact -->
                                 <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                             </li>
                         </ul>
@@ -129,7 +129,7 @@
             <div class="col d-flex justify-content-center">
                 <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
                     <input class="form-control mr-sm-2" type="text" pattern="[a-zA-Z0-9]+[a-zA-Z0-9 ]+" name="q" placeholder="Search" aria-label="Search">
-                    <button class="btn my-2" type="submit">
+                    <button class="btn my-2" type="submit" aria-label="Search">
                         <span class="search-icon">
                             <i class="fas fa-search"></i>
                         </span>
@@ -172,8 +172,8 @@
                 <a href="{% url 'returns' %}">Returns</a>
             </div>
             <div class="col-sm-4">
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook icon"><i class="fab fa-facebook-f"></i></a>
             </div>
             <div class="col-sm-4">
                 <a href="{% url 'faq' %}">FAQ</a>
