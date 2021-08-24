@@ -150,13 +150,17 @@ A superuser can visit:
 
 **Colours**
 
-* I kept the colours of the site, consistent and subtle. None of the colours are too extreme, the colours flow together nicely and allow easy use of the site without overwhelming the user. 
+* I kept the colours of the site, consistent and subtle. The colours flow together nicely and allow easy use of the site without overwhelming the user. The colours hold positive connotations - yellow and green are associated as positive / success colours.
 
 ![Colours](readme_images/ms4_colours.png)
 
 **Font**
 
+* I used Roboto Mono for the body text, and Bebas Neue for headings, brand name or text that required attention. The two fonts go well together and I used Google Fonts to choose this pairing. They feel modern together and are not difficult to read on any screen size. 
+
 **Images**
+
+* The home page has a carousel which showcases images related to the purpose of the site. These images show books, immediately informing the user of what the site does. They're comforting images for people who enjoy reading, showing a relaxing atmosphere such as a libary.
 
 <br>
 
