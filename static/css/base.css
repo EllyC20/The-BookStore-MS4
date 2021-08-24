@@ -22,6 +22,7 @@ hr {
 /* Footer */
 footer {
     background-color: rgba(211, 211, 211, 0.5);
+    margin-top: 30px;
 }
 
 /* Navbar profile and basket */
@@ -161,6 +162,10 @@ transition: all 0.2s;
 .product-detail-btn:hover {
     color: #000000;
     background-color: yellow;
+}
+
+.review-div {
+    padding: 50px;
 }
 
 /* Toasts */
