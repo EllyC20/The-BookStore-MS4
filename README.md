@@ -191,7 +191,20 @@ A superuser can visit:
 
 ### Current Features 
 
+* Home page with carousel image.
+* Footer with social media links and 2 common e-commerce pages (FAQ's and Returns)
+* Product page with pagination 
+* Product page features a "filter by" option allowing users to choose how they see products.
+* Categories dropdown from Navbar, allowing the user to access specific categories.
+* Product detail page showing details and allowing user to submit a form via the front end.
+* A contact page that provides feedback to the user after the form is submitted.
+* A functional checkout process that requires a user to complete a valid form.
+* Stripe payments, with and without authentication.
+* Toast messages throughout user journey.
+
 ### Feautures To Be Implemented
+
+*
 
 <br>
 
@@ -212,6 +225,8 @@ A superuser can visit:
 
 * [Gitpod](https://www.gitpod.io/)
   - For development of the project.
+* [Django](https://docs.djangoproject.com/en/3.2/)
+- Framework for this project.
 * [Github](https://github.com/)
   - Used to store the project.
 * [Git](https://git-scm.com/)

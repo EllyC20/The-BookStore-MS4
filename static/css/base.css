@@ -122,6 +122,16 @@ a:hover,
     cursor: pointer;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #778899;
+}
+
 /* Product page */ 
 .product-h1 {
     font-family: 'Bebas Neue', cursive;

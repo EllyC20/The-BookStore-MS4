@@ -6,6 +6,7 @@ from django_countries.fields import CountryField
 
 # Create your models here.
 
+
 class UserProfile(models.Model):
     """ Model to maintain profile & delivery details """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
