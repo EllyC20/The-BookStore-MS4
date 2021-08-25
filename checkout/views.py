@@ -7,6 +7,8 @@ import stripe
 import json
 from .models import OrderLineItem, Order
 from products.models import Product
+from profiles.forms import UserProfileForm
+from profiles.models import UserProfile
 from .forms import OrderForm
 
 # Create your views here.
