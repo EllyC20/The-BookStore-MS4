@@ -1,0 +1,14 @@
+Hey {{ order.full_name }}
+
+Thanks for your order, this is your confirmation of the details you provided.
+
+Order Number: {{ order.order_number }}
+Date Ordered: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+
+We'll ship your order as soon as possible to the below address.
+
+{{ order.street_address1 }}
+
+Thanks again for your order!
