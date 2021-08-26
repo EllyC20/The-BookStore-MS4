@@ -2,9 +2,10 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.core.paginator import Paginator
 from django.contrib import messages
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
 from .models import Product, Category, ProductReview
-from .forms import ReviewForm
+from .forms import ReviewForm, ProductForm
 
 # Create your views here.
 
@@ -106,3 +107,14 @@ def add_review(request, product_id):
     }
 
     return render(request, context)
+
+
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
