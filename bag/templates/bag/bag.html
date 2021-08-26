@@ -26,7 +26,11 @@
         <tbody>
             {% for item in bag_items %}
                 <tr>
-                    <td data-label="product-img" class="w-25"><img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="bag-img"></td>
+                    {% if item.product.image %}
+                        <td data-label="product-img" class="w-25"><img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="bag-img"></td>
+                    {% else %}
+                        <td data-label="product-img" class="w-25"><img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="bag-img"></td>
+                    {% endif %}
                     <td data-label="product-name">{{ item.product.name }}</td>
                     <td data-label="product-quantity">
                         <form action="{% url 'adjust_bag' item.item_id %}" method="POST" class="form update-form">
