@@ -54,6 +54,18 @@
                     <p class="muted">{{ product.author }}</p>
                     {% endif %}
                     <span>€{{ product.price }}</span>
+                    {% if request.user.is_superuser %}
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col col-md-6">
+                                    <a href="{% url 'edit_product' product.id %}" class="product-detail-btn">Edit</a>
+                                </div>
+                                <div class="col col-md-6">
+                                    <a href="{% url 'delete_product' product.id %}" class="product-detail-btn">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         {% endfor %}
