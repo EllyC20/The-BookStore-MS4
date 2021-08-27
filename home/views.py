@@ -31,7 +31,7 @@ def contact(request):
            'message from ' + message_name,  # subject line
            message,  # message
            message_email,  # from email
-           ['testing@gmail.com'],  # in real world app site owner email here
+           ['ms4.thebookstore@gmail.com'],  # in real world app site owner email here
         )
 
         return render(request, 'home/contact.html', {'message_name': message_name})
