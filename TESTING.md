@@ -33,10 +33,34 @@
     * If a user fails authentication, they are shown an appropiate error message at card details.
     * If a user passes authentication, the checkout process continues as anticipated. 
 
+### Email Confirmations Of Orders
+
+* Once a user has placed an order and provided a vaild email address, they should be emailed an order confirmation with an order summary and the address the product is being shipped to. To test this I placed an order, provided a valid email address and then checked my emails. This confirmed the expected results.
+
  ## Testing the "CTA" (call to action) button on Home page
  * On the homepage there is a button shown on the carousel. The button says "Shop Now" and when clicked should take the user to the "All Products" page. I tested this by using a laptop, Ipad and mobile device and physically clicking the button. By doing this I confirmed the expected results.
 
-## Profile 
+## Superuser Functionality
+
+* To test superuser functionality I logged in using the superuser log-in. I then clicked account, and "product management". When I did this I noted I hadn't pushed the correct url to Heroku so I commited and pushed this change. Once I had done this I tried again, and this took me to the "add product" form. To test I completed the form, clicked "add product" and upon doing so I expect to be redirected to the product detail page of the new product. Taking these steps confirmed the expected results. 
+
+* Superusers also require the capacity to edit or delete products. This is easily accessed on the "product" page. Each card contains a footer with two buttons. Clicking the "edit" button brings you to the edit product page where a prepopulated form with all object data is displayed and available for editing. The superuser is also alerted via a toast message as to which product they are editing. Altering a detail and submitting the change works and is reflected in the product detail. 
+
+* If a superuser clicks delete, currently the product will be removed from the database without a prompt. To improve user experience and avoid accidental deleting of products a fix needs to be implemented for this. 
+
+## Profile
+
+### Testing Registration Of A New User. 
+
+* To test this function I visited the deployed Heroku app. I clicked "account" followed by "register". Upon clicking register I expect to be taken to a page containing a form where I will need to submit a valid email and password. Once I have correctly completed this form and clicked "sign-up" ath the bottom of the form, I should be redirected to a page alerting me that an email has been sent to the provided address for me to confirm sign-up. Once I visit my emails and follow the link to confirm and confirm the address, I should then be redirected to log in. 
+    * To test this I took the above steps using a laptop, I recieved a confirmation email containing a link which brought me back to the site, I was able to confirm my email and log in successfully. 
+    * As this account is <strong>not</strong> a superuser, I did not have access to "product management" from the account options nor could I see the edit / delete product buttons on the product page.
+
+### Testing Log-In And Save Of Details
+* As a registered user, a user can log in and visit a profile page. If the account is new (as in the steps above), in the profile there will be no saved address details and no order details. Once a user has made a purchase, their address details should be saved if they ticked the box "save to profile" under the checkout form. To test this I placed an order, and ticked the appropiate box. I then checked the profile and saw my details had been saved and I now had a recognised order linked to the account. 
+
+### Log Out 
+* Once I have clicked logout, I shouldn't be able to get back to the profile page using brute force. I tested this by logging out while on the profile page, then clicking the back button to attempt to get to the previous page. This resulted in me being redirected to the sign-in page. I also tested this by adding /profile to the end of the site URL, this also redirected me to the sign-in page.
 
  ## Footer 
  * Within the Footer, there are 2 navigational options for within the website and 2 social media icons. 
@@ -76,3 +100,4 @@
 
 ### Profile 
 
+### Superuser Pages
