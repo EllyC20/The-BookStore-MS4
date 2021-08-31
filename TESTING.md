@@ -86,7 +86,7 @@
 * When testing I noted that the product quantity selector on the basket page, was not correctly validating user input. A user could enter a negative number or a number above the specified highest amount. There is still a bug within this process which can be recreated using the below steps:
     * Add any item to the basket. 
     * Alter the quantity using the keyboard to enter an invalid number such as -10, -2, -3, 50, 100, etc. Then press <strong>ENTER</strong> on the keyboard. This correctly shows an error message and that validation is working.
-    * However, if you repeat the step above and click <strong>UPDATE</strog>, rather than hitting enter. Then doing this allows for incorrect entering of numbers either negative or larger than allowed. This presents a problem for mobile users. This bug, I currently don't have a known fix for.
+    * However, if you repeat the step above and click <strong>UPDATE</strong>, rather than hitting enter. Then doing this allows for incorrect entering of numbers either negative or larger than allowed. This presents a problem for mobile users. This bug, I currently don't have a known fix for.
 
 ## Testing User Stories
 
