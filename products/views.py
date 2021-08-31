@@ -81,29 +81,28 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-
+@login_required
 def add_review(request, product_id):
     """
     A view to allow the user to add a review to a product
     """
 
     product = get_object_or_404(Product, pk=product_id)
-
-    if request.user.is_authenticated:
-        if request.method == 'POST':
-            form = ReviewForm(request.POST)
-            if form.is_valid():
-                review = form.save(commit=False)
-                review.product = product
-                review.user = request.user
-                review.save()
-                messages.success(request, 'Your review was successful')
-                return redirect(reverse('product_detail', args=[product.id]))
-            else:
-                messages.error(
-                    request, 'Failed to add your review')
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.success(request, 'Your review was successful')
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
-            form = ReviewForm()
+            messages.error(
+                request, 'Failed to add your review')
+    else:
+        form = ReviewForm()
+
     context = {
         'form': form
     }
