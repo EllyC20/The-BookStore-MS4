@@ -86,11 +86,52 @@
 * When testing I noted that the product quantity selector on the basket page, was not correctly validating user input. A user could enter a negative number or a number above the specified highest amount. There is still a bug within this process which can be recreated using the below steps:
     * Add any item to the basket. 
     * Alter the quantity using the keyboard to enter an invalid number such as -10, -2, -3, 50, 100, etc. Then press <strong>ENTER</strong> on the keyboard. This correctly shows an error message and that validation is working.
-    * However, if you repeat the step above and click <strong>UPDATE</strog>, rather than hitting enter. Then doing this allows for incorrect entering of numbers either negative or larger than allowed. Currently I don't have a fix for this but will be looking into a fix prior to submission.
-
-
+    * However, if you repeat the step above and click <strong>UPDATE</strog>, rather than hitting enter. Then doing this allows for incorrect entering of numbers either negative or larger than allowed. This presents a problem for mobile users. This bug, I currently don't have a known fix for.
 
 ## Testing User Stories
+
+**As a New User**
+
+* I want to be able to use the site intuitively.
+    - The site is clean, simple and easy to use. There's a common page structure used and easily recognised icons for features such as the basket or profile. 
+* I want to be able to search for products.
+    - The search bar provides this functionality for all users.
+* I want to be able to view the details of individual products.
+    - By visiting the products page, and choosing a product. This provides the product details.
+* I want to be able to order products by category.
+    - Within the navbar, there is a categories drop down option where a user can then choose which category to view.
+* I want to be able to order products by finer details such as A-Z, price low to high or vice versa.
+    - At the top of the products page, there is a dropdown box that provides the user with more options to filter the products.
+* I want to be able to add products to my basket and checkout, without an account.
+    - This is possible, delivery detail information will not be saved nor will a profile be created to show previous orders.
+* I want to be shown messages throughout my journey through the site.
+    - FIX FOR TOASTS TO BE IMPLEMENTED
+* I want to be able to register an account.
+    - The user can register by visiting the site, and choosing profile and selecting register, then completing the form and verifying the email address used.
+
+**As a Site Owner/Super User**
+
+* I want to have a payment system implemented.
+    - Stripe payments system is implemented and fully functional. 
+* I want to be able to edit product details.
+    - This function is provided through the products page and selecting the "edit" button.
+* I want to be able to add new products.
+    - This function is provided through the product management option within the profile dropdown.
+* I want to encourage returning users by having an easy to use site.
+    - The site is intuitive, clean and straight forward.
+* I want to have a contact form where users can send any questions.
+    - A contact form is provided where emails are sent to the sites email address. This email provides the siteowner with the details to contact the user who sent the form.
+
+**As a Returning User/Signed In User**
+
+* I want to be able to edit my delivery address and information.
+    - This can be done via the profile.
+* I want to have a personalised profile that shows any previous orders.
+    - This is visible in the profile if orders have been made.
+* I want to be able to log in to a previously registered profile. 
+    - This function is provided via the log in option.
+* I want to be able to leave reviews for products.
+    - Once logged in, by visiting a products detail page, this can be done.
 
 
 ## Responsiveness 

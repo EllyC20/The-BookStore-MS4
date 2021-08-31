@@ -45,7 +45,6 @@
 * I want to be able to add products to my basket and checkout, without an account.
 * I want to be shown messages throughout my journey through the site.
 * I want to be able to register an account.
-* I want have the functionality to save my shipping details. 
 
 **As a Site Owner/Super User**
 
