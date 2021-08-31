@@ -125,7 +125,94 @@ A superuser can visit:
 
 <span id="database"></span>
 
-**Database Schema** 
+### Database 
+
+* During the development phase I used the sqlite3 database.
+* For deployment, I used the PostgresSQL database which is provided by Heroku.
+
+### Database Models
+
+<br>
+
+**Profile App**
+
+**UserProfile model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ User | user | OneToOneField |  User, on_delete=models.CASCADE
+ Phone number | default_phone_number | CharField | max_length=20, null=True, blank=True
+ Street address 1 | default_street_address1 | CharField | max_length=80, null=True, blank=True
+ Street address 2 | default_street_address2 | CharField | max_length=80, null=True, blank=True
+ Town/City | default_town_or_city | Charfield | max_length=40, null=True, blank=True
+ Postcode | default_postcode | CharField | max_length=20, null=True, blank=True
+ Country | default_country | CountryField | blank_label='Country', null=True, blank=True
+
+**Checkout App**
+
+**Order model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Order number | order_number | CharField | max_length=32, null=False, editable=False
+ User profile | user_profile | ForeignKey | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders'
+ Full name | full_name | CharField | max_length=50, null=False, blank=False
+ Email| email| EmailField | max_length=254, null=False, blank=False
+ Phone number | phone_number | Charfield | max_length=20, null=False, blank=False
+ Country| country | CountryField | blank_label='Country *', null=False, blank=False
+ Postcode | postcode | CharField | max_length=20, null=True, blank=True
+ Town/City | town_or_city | CharField | max_length=40, null=False, blank=False
+ Street address 1 | street_address1 | CharField | max_length=80, null=False, blank=False
+ Street address 2 | street_address2 | CharField | max_length=80, null=True, blank=True
+ Date | date | DateTimeField | auto_now_add=True
+ Delivery cost | delivery_cost | DecimalField | max_digits=6, decimal_places=2, null=False, default=0
+ Order total | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+ Grand total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+ Original bag | original_bag | TextField | null=False, blank=False, default=''
+ Stipe pid | stripe_pid | CharField | max_length=254, null=False, blank=False, default=''
+
+**OrderLineItem model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Order  | order | ForeignKey | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
+ Product | product | ForeignKey | Product, null=False, blank=False, on_delete=models.CASCADE
+ Quantity | quantity | IntegerField | null=False, blank=False, default=0
+ Lineitem total | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+
+**Products App**
+
+**Category model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ name | name | CharField | max_length=254
+ Friendly name | friendly_name | CharField | max_length=254, null=True, blank=True
+
+**Product model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Category| category| ForeignKey | Category, null=True, blank=True, on_delete=models.SET_NULL
+ Image | image | ImageField | null=True, blank=True
+ Name | name | CharField | max_length=300
+ Author | author | CharField | max_length=300, blank=True
+ Description | description | TextField | null=True, blank=True
+ Image url | image_url | URLField | max_length=1024, null=True, blank=True
+ Price | price | DecimalField | max_digits=6, decimal_places=2
+
+**ProductReview model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Product | product | ForeignKey | Product, null=True, blank=True, on_delete=models.SET_NULL, related_name='reviews'
+ User | user | ForeignKey | User, null=True, blank=True, on_delete=models.CASCADE
+ Title | title | CharField | max_length=254
+ Content | content | TextField | 
+ Rating | rating | IntegerField | choices=rating_selection, default=3
+ Date Added | date_added | DateTimeField | auto_now_add=True
+
+
 
 
 <span id="wireframes"></span>
