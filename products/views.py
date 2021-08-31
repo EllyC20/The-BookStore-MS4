@@ -102,9 +102,9 @@ def add_review(request, product_id):
             else:
                 messages.error(
                     request, 'Failed to add your review')
-    context = {
-        'form': form
-    }
+        context = {
+            'form': form
+        }
 
     return render(request, context)
 
