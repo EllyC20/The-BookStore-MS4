@@ -8,7 +8,7 @@
 * Within the navigational bar there are three main options, "All Products", "Categories" and "Contact". 
     * When clicking "All Products" I expect to be shown the products page which displays all products within the database. I tested this using a laptop, Ipad and mobile device and physically clicking the navigational link. I cross referenced the products with the database to confirm all were present. This confirmed all expected results.
     * When clicking "Categories" I expect to be shown a drop down menu featuring all of the categories listed within the database. I checked this by visiting the database and cross referencing the shown results. I tested this using a laptop, Ipad and mobile device and physically clicking the navigational link. This confirmed the expected results.
-    * CONTACT FORM TO BE COMPLETED.
+    * Choosing "Contact" brings the user to a contact page where a quick message can be sent. To test this functionality I filled in the form and checked the inbox of the email address I expected the email to go to. This confirmed the expected results, and the message from the user is received. 
 
  ## User And Basket 
  
@@ -46,7 +46,7 @@
 
 * Superusers also require the capacity to edit or delete products. This is easily accessed on the "product" page. Each card contains a footer with two buttons. Clicking the "edit" button brings you to the edit product page where a prepopulated form with all object data is displayed and available for editing. The superuser is also alerted via a toast message as to which product they are editing. Altering a detail and submitting the change works and is reflected in the product detail. 
 
-* If a superuser clicks delete, currently the product will be removed from the database without a prompt. To improve user experience and avoid accidental deleting of products a fix needs to be implemented for this. 
+* If a superuser clicks delete, currently the product will be removed from the database without a prompt. To improve user experience and avoid accidental deleting of products a fix needs to be implemented for this. <strong>UPDATE: 31/08/21. A delete modal is now in place, when a superuser chooses delete a modal will pop up allowing them to either confirm, or cancel their choice.</strong>
 
 ## Profile
 
@@ -83,6 +83,11 @@
 
 * I encountered an error message from Gitpod upon trying to open my workspace that said "Last backup failed: workspace content was never ready." Within Github I could see the work committed along with a commit message but Gitpod did not recognise it. With the help of tutor support we managed to get the work back by undoing changes made, restoring files and finally a pull request. This ensured all work was up to date with the most recent commit. 
 * Throughout the site, only success toast messages are working currently. (24/08/21) This will be looked into and fixed prior to submission. This is affecting basket toasts, and search toast for if no results have been found.
+
+
+
+## Testing User Stories
+
 
 ## Responsiveness 
 
