@@ -57,12 +57,36 @@
                     {% if request.user.is_superuser %}
                         <div class="card-footer">
                             <div class="row">
-                                <div class="col col-md-6">
-                                    <a href="{% url 'edit_product' product.id %}" class="product-detail-btn">Edit</a>
-                                </div>
-                                <div class="col col-md-6">
-                                    <a href="{% url 'delete_product' product.id %}" class="product-detail-btn">Delete</a>
-                                </div>
+                                <small>
+                                    <div class="col">
+                                        <a href="{% url 'edit_product' product.id %}" class="">Edit</a>
+                                    </div>
+                                    <div class="col">
+                                        <!-- Button trigger modal -->
+                                        <a href="#" data-toggle="modal" class="text-danger" data-target="#deleteModal">Delete</a>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="deleteModalLabel">Delete {{ product.name }} ?</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Confirm Below.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <a href="" data-dismiss="modal">Cancel</a>
+                                                <a href="{% url 'delete_product' product.id %}" class="text-danger">Delete</a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </small>
                             </div>
                         </div>
                     {% endif %}
