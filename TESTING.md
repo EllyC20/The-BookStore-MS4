@@ -83,6 +83,10 @@
 
 * I encountered an error message from Gitpod upon trying to open my workspace that said "Last backup failed: workspace content was never ready." Within Github I could see the work committed along with a commit message but Gitpod did not recognise it. With the help of tutor support we managed to get the work back by undoing changes made, restoring files and finally a pull request. This ensured all work was up to date with the most recent commit. 
 * Throughout the site, only success toast messages are working currently. (24/08/21) This will be looked into and fixed prior to submission. This is affecting basket toasts, and search toast for if no results have been found.
+* When testing I noted that the product quantity selector on the basket page, was not correctly validating user input. A user could enter a negative number or a number above the specified highest amount. There is still a bug within this process which can be recreated using the below steps:
+    * Add any item to the basket. 
+    * Alter the quantity using the keyboard to enter an invalid number such as -10, -2, -3, 50, 100, etc. Then press <strong>ENTER</strong> on the keyboard. This correctly shows an error message and that validation is working.
+    * However, if you repeat the step above and click <strong>UPDATE</strog>, rather than hitting enter. Then doing this allows for incorrect entering of numbers either negative or larger than allowed. Currently I don't have a fix for this but will be looking into a fix prior to submission.
 
 
 
