@@ -15,7 +15,7 @@
   - <a href="#strategy">Strategy</a>
   - <a href="#scope">Scope</a>
   - <a href="#structure">Structure</a>
-- <a href="#database">Database Schema</a>
+- <a href="#database">Database</a>
 - <a href="#wireframes">Wireframes</a>
 - <a href="#surface">Surface</a>
 - <a href="#crud">CRUD</a>
@@ -213,8 +213,6 @@ A superuser can visit:
  Date Added | date_added | DateTimeField | auto_now_add=True
 
 
-
-
 <span id="wireframes"></span>
 
 ### 4.Skeleton
@@ -259,18 +257,26 @@ A superuser can visit:
 
 **Create** 
 
+* Create functionality is provided for the superuser via product management. A site owner (superuser) can add a new product using a front-end form that will add the product to the database and visually to the front end.
+* Create functionality is provided for logged in / registered users as they can add reviews to products.
+
 <br>
 
 **Read** 
 
+* All users can read the information within the site.
 
 <br>
 
 **Update**
 
+* Update functionality is provided for the superuser via the product page, using the "edit" button. Here the site owner can edit the products information on the site and database. 
+
 <br>
 
 **Delete**
+
+* Delete functionality is provided to the superuser via the product page, using the "delete" button. Here the site owner can delete a product from the site and database.
 
 <br>
 
@@ -283,11 +289,15 @@ A superuser can visit:
 * Product page with pagination 
 * Product page features a "filter by" option allowing users to choose how they see products.
 * Categories dropdown from Navbar, allowing the user to access specific categories.
-* Product detail page showing details and allowing user to submit a form via the front end.
+* Product detail page showing details.
 * A contact page that provides feedback to the user after the form is submitted.
 * A functional checkout process that requires a user to complete a valid form.
-* Stripe payments, with and without authentication.
+* Stripe payments, with and without card authentication. (Test card numbers can be used to prompt an authentication request.)
 * Toast messages throughout user journey.
+* Confirmation emails of orders.
+* Contact emails are sent to a "business" email address.
+* Option to add reviews to products as a logged in user.
+
 
 ### Feautures To Be Implemented
 
@@ -313,7 +323,7 @@ A superuser can visit:
 * [Gitpod](https://www.gitpod.io/)
   - For development of the project.
 * [Django](https://docs.djangoproject.com/en/3.2/)
-- Framework for this project.
+  - Framework for this project.
 * [Github](https://github.com/)
   - Used to store the project.
 * [Git](https://git-scm.com/)
@@ -391,6 +401,9 @@ All testing detail can be found [here.](https://github.com/EllyC20/The-BookStore
 ### Content
 
 * The description of the books on the product details page are taken from [Book Depository](https://www.bookdepository.com/)
+* Home page text, written by me.
+* Footer / FAQ written by me. 
+* Contact page, written by me. 
 
 ### Media 
 
@@ -399,3 +412,9 @@ All testing detail can be found [here.](https://github.com/EllyC20/The-BookStore
 * The home page carousel images are from [Pixabay](https://pixabay.com/)
 
 ### Acknowledgements
+
+* To the Code Institute for the course content, and the last walk through project "Boutique Ado" which was used to implement some features.
+* To Precious my mentor, for his time and guidance.
+* To Tutor Support who have been extremeley helpful and willing with any questions.
+* Slack community for providing help where possible.
+* Stack Overflow for general queries.
