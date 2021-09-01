@@ -96,8 +96,6 @@ a:hover,
 .banner-message {
     background-color: lightgreen;
 }
-/* Contact page */
-
 
 /* Bag */
 .table-container {
@@ -150,6 +148,10 @@ select option[value=""] {
 
 .category-name {
     text-decoration: underline;
+}
+
+.card-product-details {
+    padding: 3px;
 }
 
 /* Product detail */

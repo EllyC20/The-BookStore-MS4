@@ -29,10 +29,10 @@
         <!-- Product Details -->
         <div class="col-md-8 col-sm-12">
             <div class="product-details">
-                <h1 class="product-h1">{{ product.name }}</h1>
-                <p>{{ product.author }}</p>
-                <p>{{ product.description }}</p>
-                <h1 class="product-h1">€{{ product.price }}</h1>
+                <h1 class="product-h1 card-product-details">{{ product.name }}</h1>
+                <p class="card-product-details">{{ product.author }}</p>
+                <p class="card-product-details">{{ product.description }}</p>
+                <h1 class="product-h1 card-product-details">€{{ product.price }}</h1>
                 <hr>
                 <!-- Add to bag -->
                 <form action="{% url 'add_to_bag' product.id %}" method="POST">
