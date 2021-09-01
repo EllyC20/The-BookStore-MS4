@@ -151,7 +151,7 @@ select option[value=""] {
 }
 
 .card-product-details {
-    padding: 3px;
+    padding-left: 4px;
 }
 
 /* Product detail */

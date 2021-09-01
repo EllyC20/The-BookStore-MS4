@@ -49,11 +49,11 @@
                     </a>
                     {% endif %}
                     <!-- Product Details -->
-                    <h1 class="product-h1">{{ product.name }}</h1>
+                    <h1 class="product-h1 card-product-details">{{ product.name }}</h1>
                     {% if product.author %}
-                    <p class="muted">{{ product.author }}</p>
+                    <p class="muted card-product-details">{{ product.author }}</p>
                     {% endif %}
-                    <span>€{{ product.price }}</span>
+                    <span class="card-product-details">€{{ product.price }}</span>
                     {% if request.user.is_superuser %}
                         <div class="card-footer">
                             <div class="row">
