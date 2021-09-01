@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from django.core.mail import send_mail
+from . forms import SubscriberForm
+from django.contrib import messages
 
 # Create your views here.
 
@@ -21,6 +23,7 @@ def faq(request):
 
 def contact(request):
     """ A view to return the contact page and form submission """
+    form = SubscriberForm()
     if request.method == "POST":
         message_email = request.POST['message-email']
         message_name = request.POST['message-name']
@@ -34,9 +37,18 @@ def contact(request):
            ['ms4.thebookstore@gmail.com'],  # in real world app site owner email here
         )
 
-        return render(request, 'home/contact.html', {'message_name': message_name})
+        return render(request, 'home/contact.html', {'message_name': message_name, 'form': form})
     else:
-        return render(request, 'home/contact.html', {})
+        return render(request, 'home/contact.html', {'form': form})
+
+
+def subscribe_form(request):
+    if request.method == "POST":
+        form = SubscriberForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully Subscribed.')
+        return redirect(reverse("contact"))
 
 
 def subscriber_email(request):

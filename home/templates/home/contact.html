@@ -50,17 +50,14 @@
                 <p>
                     085 123 4567
                 </p>
+                <!-- Newsletter Form -->
                 <h1 class="product-h1">Sign Up For Our Newsletter</h1>
                 <p>Sign up for our newsletter below and recieve emails showcasing our latest books.</p>
-                <div class="form-holder row">
-                    <form action="" method="POST">
-                      {% csrf_token %}
-                      <div class="form-group">
-                          <div class="col"><textarea name="newsletter-signup" id="newsletter-signup" cols="30" rows="1"></textarea></div>
-                          <div class="col"><button type="submit" class="submit product-detail-btn">Sign Up</button></div>
-                      </div>
-                    </form>
-                </div>
+                <form action="{% url 'subscribe' %}" method="POST">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="col"><input type="submit" class="submit product-detail-btn" value="Sign Up"></div>
+                </form>
             </div>
         </div>
     </div>
