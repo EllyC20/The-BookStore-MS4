@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <h1 class="main-h1 text-center">Send A Newsletter</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center">Here you can send an email to everyone who has subscribed to your newsletter.</p>
+                <form action="" method="POST" class="text-center">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <input type="submit" class="product-detail-btn" value="Send Newsletter">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

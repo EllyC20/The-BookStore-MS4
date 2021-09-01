@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, reverse
 from django.core.mail import send_mail
-from . forms import SubscriberForm
+from . forms import SubscriberForm, EmailForm
+from . models import Subscribers
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django_pandas.io import read_frame
 
 # Create your views here.
 
@@ -51,9 +54,30 @@ def subscribe_form(request):
         return redirect(reverse("contact"))
 
 
+@login_required
 def subscriber_email(request):
     """ A view to allow superusers to send an email to their subscriber list """
+    emails = Subscribers.objects.all()
+    dataframe = read_frame(emails, fieldnames=['email'])
+    mail_list = dataframe['email'].values.tolist()
+    if request.method == "POST":
+        form = EmailForm(request.POST)
+        if form.is_valid:
+            form.save()
+            title = form.cleaned_data.get('title')
+            message = form.cleaned_data.get('message')
+            send_mail(
+                title,
+                message,
+                '',
+                mail_list,
+                fail_silently=False,
+            )
+            messages.success(request, 'You Have Sent Your Newsletter To Your Subscribers.')
+            return redirect(reverse("subscriber_email"))
+    else:
+        form = EmailForm()
     context = {
-
+        'form': form,
     }
     return render(request, 'home/subscriber_email.html', context)
