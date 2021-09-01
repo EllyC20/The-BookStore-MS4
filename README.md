@@ -211,6 +211,21 @@ A superuser can visit:
  Rating | rating | IntegerField | choices=rating_selection, default=3
  Date Added | date_added | DateTimeField | auto_now_add=True
 
+**Home App**
+
+**Subscribers model**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Email | email | EmailField | null=True
+ Date | date | DateTimeField | auto_now_add=True
+
+ **SubscriberEmail model**
+
+ | **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Title | title | CharField | max_length=200, null=True
+ Message | message | TextField | null=True
 
 <span id="wireframes"></span>
 

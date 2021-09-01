@@ -39,3 +39,5 @@ class OrderForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
+            self.fields['phone_number'].widget.attrs['class'] = 'number'
+            self.fields['full_name'].widget.attrs['class'] = 'letters'
