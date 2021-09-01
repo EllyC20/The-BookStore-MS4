@@ -37,3 +37,11 @@ def contact(request):
         return render(request, 'home/contact.html', {'message_name': message_name})
     else:
         return render(request, 'home/contact.html', {})
+
+
+def subscriber_email(request):
+    """ A view to allow superusers to send an email to their subscriber list """
+    context = {
+
+    }
+    return render(request, 'home/subscriber_email.html', context)
