@@ -48,6 +48,13 @@
 
 * If a superuser clicks delete, currently the product will be removed from the database without a prompt. To improve user experience and avoid accidental deleting of products a fix needs to be implemented for this. <strong>UPDATE: 31/08/21. A delete modal is now in place, when a superuser chooses delete a modal will pop up allowing them to either confirm, or cancel their choice.</strong>
 
+* A superuser (site owner) has the functionality to be able to send a newsletter to users who have subscribed via the contact page. To test this function, I logged in as superuser and ensured within the drop down "account" option there was an option named "Email Subscribers", upon clicking this I expected to be taken to a page where a form would be available. This form should have two areas to complete, title - for newsletter title and a content area. This confirmed the expected results. 
+    - Prior to this I had signed up for the newsletter using a personal email.
+    - I completed the form with a title of "Newsletter From The Book Store", and a message of "Test newsletter function." I then clicked "send newsletter" and received a success toast message informing me I had sent a newsletter.
+    - I checked my emails and the newsletter with the content I had filled in was available - see image below.
+
+![ReadmeImage](readme_images/newsletter.png)
+
 ## Profile
 
 ### Testing Registration Of A New User. 
