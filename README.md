@@ -94,6 +94,7 @@ A new user can visit:
   * The home page
   * Can access the register and login pages 
   * The products page
+  * Sign up for newsletter on contact page
   * Specific category pages
   * The basket
   * The checkout
@@ -104,8 +105,10 @@ A new user can visit:
 A returning user can visit:
   * The home page
   * Can access the log out functionality
-  * Profile
+  * Profile, to save details and view previous orders.
+  * Leave a review function
   * The products page
+  * Sign up for newsletter on contact page
   * Specific category pages
   * The basket
   * The checkout
@@ -116,6 +119,10 @@ A superuser can visit:
   * The home page
   * Can access the log out functionality
   * Profile
+  * Product management (Add a product)
+  * Edit a product
+  * Delete a product
+  * Send a newsletter to subscribers
   * The products page
   * Specific category pages
   * The basket
