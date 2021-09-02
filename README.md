@@ -1,7 +1,5 @@
 # The Book Store
 
-![Am I Responsive Image]
-
 ## The Book Store is a fictional online book and supplies store. The stores purpose is to sell books, and other materials. These  materials could include arts and crafts supplies, notebooks, school supplies or home office products. The store will allow the owner to make more sales by moving to an online platform. 
 
 #### The live website can be viewed [here](https://the-bookstore-ms4.herokuapp.com/)
@@ -254,6 +252,11 @@ A superuser can visit:
 
  **When viewing the wireframes there are some changes that should be noted, they are detailed below.**
 
+ * Initally the log in / register functionality was supposed to be an expanding form from the side of the viewport, throughtout development this didn't feel intuitive or what users are used it. Having forms users can visit to register / log in follows a conventional way of providing these features.
+ * The contact page was going to be a modal, however as the contact page evolved to contain a newsletter subscription a modal was no longer suitable.
+ * On the homepage there was due to be a "recently added" section displaying the most recently added products. However due to time constraints and too large of a project scope, this was not completed. This could be a future feature.
+ * The "quick shop" button on product page was not implemented as it did not visually look good and made the page feel too "busy".
+
 <span id="surface"></span>
 
 ### 5.Surface
@@ -374,8 +377,6 @@ A superuser can visit:
   - To get Font Awesome linked.
 * [Lucidchart](https://www.lucidchart.com/pages/) 
   - For "ER Digram".
-* [Am I Responsive](http://ami.responsivedesign.is/) 
-  - For the image showing the site at the top of this README.
 
 <br>
 
