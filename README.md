@@ -312,6 +312,8 @@ A superuser can visit:
 * Categories dropdown from Navbar, allowing the user to access specific categories.
 * Product detail page showing details.
 * A contact page that provides feedback to the user after the form is submitted.
+* A newsletter sign up. 
+* Superuser ability to send newsletters to subscribers.
 * A functional checkout process that requires a user to complete a valid form.
 * Stripe payments, with and without card authentication. (Test card numbers can be used to prompt an authentication request.)
 * Toast messages throughout user journey.
@@ -320,9 +322,12 @@ A superuser can visit:
 * Option to add reviews to products as a logged in user.
 
 
-### Feautures To Be Implemented
+### Future Feautures
 
-*
+* Change newsletter to an API such as mailchimp, to send automated monthly or weekly updates.
+* Social media login / registration.
+* A wishlist or favourites option, where users can save items to their profile.
+* A loyalty programme where users receieve free shipping after so many orders or build up points. 
 
 <br>
 
@@ -422,7 +427,7 @@ All testing detail can be found [here.](https://github.com/EllyC20/The-BookStore
 ### Content
 
 * The description of the books on the product details page are taken from [Book Depository](https://www.bookdepository.com/)
-* Home page text, written by me.
+* Home page content, is taken from [Waterstones About Us](https://www.waterstones.com/help/about-us/44) and edited slightly for educational purposes only.
 * Footer / FAQ written by me. 
 * Contact page, written by me. 
 
