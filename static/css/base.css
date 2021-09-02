@@ -154,6 +154,10 @@ select option[value=""] {
     padding-left: 4px;
 }
 
+.no-results-h1 {
+    padding-top: 15px;
+}
+
 /* Product detail */
 
 .product-detail-btn {

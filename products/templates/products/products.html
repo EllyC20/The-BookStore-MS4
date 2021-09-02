@@ -94,6 +94,13 @@
             </div>
         {% endfor %}
     </div>
+    {% for product in items %}
+        {% empty %}
+        <div class="text-center">
+            <h1 class="no-results-h1">Sorry No Books Found!</h1><br>
+            <a href="{% url 'products' %}" class="product-detail-btn">Back To Shop</a>
+        </div>
+    {% endfor %}
     <hr>
     <!-- Pagination -->
     <div class="text-center pagination-div">
@@ -112,5 +119,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script src="static/js/search.js"></script>
+    <script src="static/js/search."></script>
 {% endblock %}
