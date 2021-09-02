@@ -143,18 +143,32 @@
 
 ## Responsiveness 
 
-### Home Page 
+* To test responsiveness I used, devices such as an Ipad Pro 11", Iphone 8, Iphone 8 plus and a MacBook Air 13" and Google Chrome Developer tools. The results found and any further detail is below. 
 
-### Products 
+**Large Devices**
 
-### Product Detail 
+| Screen Size       | 1920 x 1080 | 1920 x 1200 | 1440 x 900 | 1600 x 900 | 
+|----------------|---------------|--------|---------|----------------|
+| Renders As Expected | Yes | Yes  | Yes   | Yes  | 
+| Images    | Good          | Good   | Good    | Good           | 
 
-### Contact 
+<br>
 
-### FAQ 
+**Medium Devices**
 
-### Returns 
+| Screen Size       | 768 x 1024 | 1366 x 1024 | 600 x 960 | 1024 x 768 | 800 x 1280 |
+|----------------|---------------|--------|---------|----------------|-----
+| Renders As Expected | Yes | Yes   | Yes    | Yes | Yes |
+| Images    | Good          | Good   | Good    | Good           | Good  |
 
-### Profile 
+<br>
 
-### Superuser Pages
+**Small Devices**
+
+| Screen Size       | 320 x 568 | 414 x 736 | 360 x 640 | 411 x 731 | 280 x 653 |
+|----------------|---------------|--------|---------|----------------|-----
+| Renders As Expected | Yes | Yes   | Yes    | Yes | Yes |
+| Images    | Good          | Good   | Good    | Good           | Good  |
+
+**Notes**
+* There are some resposiveness issues with smallest screens (280 x 653) for example within the navbar, however this is slightly redundant as phones of that size in real world are hard to come by. This could definitely be improved with more time, specific media queries and a different approach to the layout of the navigational bar.
