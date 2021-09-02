@@ -173,8 +173,19 @@
 **Notes**
 * There are some resposiveness issues with smallest screens (280 x 653) for example within the navbar, however this is slightly redundant as phones of that size in real world are hard to come by. This could definitely be improved with more time, specific media queries and a different approach to the layout of the navigational bar.
 
-## Code Validators 
+## Code Validators
+
+**HTML**
+* No serious errors.
+* There are some minor errors being rendered due to the validator not recognising closing div tags, however these are recognised by the IDE and by visually inspecting they are present. 
+* Minor errors relating to use of django forms. "Attribute placeholder not allowed on element select at this point". However when viewing the checkout.html file this line of code is not visible and there are no errors.
+* "Empty heading" on the checkout.html page is due to the H1 that contains the overlay spinner for the checkout process.
+* Two reoccuring warnings: "The type attribute is unnecessary for JavaScript resources." and "Attribute arira-haspopup not allowed on element a at this point." this is from the navbar provided by Bootstrap.
+
+
+**CSS**
+* I copied and pasted all CSS via direct input, this didn't result in any errors. The site I used can be found [here](https://jigsaw.w3.org/css-validator/)
 
 **PEP8** 
 
-* I copied and pasted each .py file into the PEP8 compliance checker, any errors were fixed with the exception of any "line too long" errors which would not be fixed without breaking code validity.
+* I copied and pasted each .py file into the PEP8 compliance checker, any errors were fixed with the exception of any "line too long" errors which would not be fixed without breaking code validity. The site I used can be found [here](http://pep8online.com/)
