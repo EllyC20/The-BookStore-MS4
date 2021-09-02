@@ -176,7 +176,7 @@
 ## Code Validators
 
 **HTML**
-* No serious errors.
+* No serious errors. The site I used can be found [here](https://validator.w3.org/nu/)
 * There are some minor errors being rendered due to the validator not recognising closing div tags, however these are recognised by the IDE and by visually inspecting they are present. 
 * Minor errors relating to use of django forms. "Attribute placeholder not allowed on element select at this point". However when viewing the checkout.html file this line of code is not visible and there are no errors.
 * "Empty heading" on the checkout.html page is due to the H1 that contains the overlay spinner for the checkout process.

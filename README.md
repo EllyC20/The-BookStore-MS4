@@ -348,7 +348,7 @@ A superuser can visit:
   - Used for styling content.
 * [Python](https://www.python.org/) 
   - Used to implement backend development. 
-* [jQuery](https://jquery.com/)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
   - Used to initialize interactive features.
 
 ## Frameworks, Libaries & Other Tools Used 
@@ -467,8 +467,8 @@ web: gunicorn name_of_application.wsgi:application
     | STRIPE_WH_SECRET| `<your stripe wh key>`  |
     | USE_AWS | `True`  |
 
-Set up Database
-    - Copy the **DATABASE_URL** (Postgres URL) from the config variables of Heroku and past it into the default database in `settings.py`.
+* Set up Database
+    - Copy the **DATABASE_URL** (Postgres URL) from the config variables of Heroku and paste it into the default database in `settings.py`.
 
     DATABASES = {
         'default': dj_database_url.parse("<DATABASE_URL here>")
@@ -488,8 +488,9 @@ Set up Database
     - Push the code to Github.
 
 #### Static & Media Files
-To host static and media files you will need an AWS S3 Bucket. You will need to create an account and create an S3 bucket. From here set up a group, a policy and user in the IAM environment. 
-For further detail on these parameters and a deeper explanation you can find out more [here](https://aws.amazon.com/s3/).
+* To host static and media files you will need an AWS S3 Bucket. 
+  - You will need to create an account and create an S3 bucket. From here set up a group, a policy and user in the IAM environment. 
+  - For further detail on these parameters and a deeper explanation you can find out more [here](https://aws.amazon.com/s3/).
 
 <br>
 

@@ -9,7 +9,7 @@
     </div>
 </div>
 {% endblock %}
-
+<!-- Bag -->
 {% block content %}
 <h1 class="main-h1 text-center">Shopping Bag</h1>
 {% if bag_items %}
@@ -63,6 +63,7 @@
                 </tr>
         </tbody>
     </table>
+    <!-- Checkout -->
     <div class="checkout-btn text-right">
         <a href="{% url 'checkout' %}" class="product-detail-btn">Checkout</a>
     </div>
