@@ -59,6 +59,9 @@
 * I want to be able to log in to a previously registered profile. 
 * I want to be able to leave reviews for products.
 
+**Key Benefits Of Having An Account**
+* As a registered user, you can leave a review of a product. A non registered user can not.
+* As a registered user, you have a profile. Here you can view previous orders and save default delivery information. A non registered user does not have a profile.
 
 <span id="strategy"></span>
 
