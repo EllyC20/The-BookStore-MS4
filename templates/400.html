@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row py-5">
+    <div class="col text-center">
+        <h1 class="main-h1">400 - Bad request </h1>
+        <p>Sorry, your request caused in an error.</p>
+        <div class="py-3">
+            <a class="product-detail-btn" href="{% url 'home' %}">Go to homepage</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
