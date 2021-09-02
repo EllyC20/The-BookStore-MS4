@@ -172,3 +172,9 @@
 
 **Notes**
 * There are some resposiveness issues with smallest screens (280 x 653) for example within the navbar, however this is slightly redundant as phones of that size in real world are hard to come by. This could definitely be improved with more time, specific media queries and a different approach to the layout of the navigational bar.
+
+## Code Validators 
+
+**PEP8** 
+
+* I copied and pasted each .py file into the PEP8 compliance checker, any errors were fixed with the exception of any "line too long" errors which would not be fixed without breaking code validity.

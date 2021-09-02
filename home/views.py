@@ -40,7 +40,7 @@ def contact(request):
            ['ms4.thebookstore@gmail.com'],
         )
 
-        return render(request, 'home/contact.html', 
+        return render(request, 'home/contact.html',
                       {'message_name': message_name, 'form': form})
     else:
         return render(request, 'home/contact.html', {'form': form})
@@ -74,7 +74,9 @@ def subscriber_email(request):
                 mail_list,
                 fail_silently=False,
             )
-            messages.success(request, 'You Have Sent Your Newsletter To Your Subscribers.')
+            messages.success(request,
+                             'You Have Sent Your Newsletter \
+                              To Your Subscribers.')
             return redirect(reverse("subscriber_email"))
     else:
         form = EmailForm()
