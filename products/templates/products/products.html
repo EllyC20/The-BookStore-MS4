@@ -111,5 +111,6 @@
 {% endblock %}
 
 {% block postloadjs %}
-<script src="{% static 'js/search.js' %}"></script>
+{{ block.super }}
+<script src="static/js/search.js"></script>
 {% endblock %}

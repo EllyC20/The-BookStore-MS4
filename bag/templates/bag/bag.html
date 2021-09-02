@@ -75,11 +75,10 @@
 {% endblock %}
 
 {% block postloadjs %}
+{{ block.super }}
 <script src="{% static 'js/quantity.js' %}"></script>
 
 <script type="text/javascript">
-
-
 // Update quantity
 $('.update-link').click(function(e) {
     var form = $(this).prev('.update-form');
