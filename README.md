@@ -353,7 +353,7 @@ A superuser can visit:
 * [Gitpod](https://www.gitpod.io/)
   - For development of the project.
 * [Django](https://docs.djangoproject.com/en/3.2/)
-  - Framework for this project.
+  - Backend framework for this project.
 * [Github](https://github.com/)
   - Used to store the project.
 * [Git](https://git-scm.com/)
@@ -373,7 +373,7 @@ A superuser can visit:
 * [cdnjs](https://cdnjs.com/)
   - To get Font Awesome linked.
 * [Lucidchart](https://www.lucidchart.com/pages/) 
-  - For images used in "Structure" section of README.
+  - For "ER Digram".
 * [Am I Responsive](http://ami.responsivedesign.is/) 
   - For the image showing the site at the top of this README.
 
