@@ -387,36 +387,70 @@ All testing detail can be found [here.](https://github.com/EllyC20/The-BookStore
 
 ### To Clone 
 
-* The project can be run locally by cloning or downloading.
-* Open the repositorie and click "Code", then select either "clone" or "download". 
-* If you choose to clone you will be provided with a URL. Copy the URL from the "Clone with HTTPS" section.
+* The project can be run locally by cloning.
+* Open the repositorie and click "Code", then select "clone".
+* When you choose to clone you will be provided with a URL. Copy the URL from the "Clone with HTTPS" section.
 * In your IDE, open Git Bash.
 * Type Git Clone and then paste the URL you copied.
 * Press enter and this will create the clone.
-* If you choose to download, you will be given a zip file which can be unzipped locally. 
-* These files can then be uploaded to your IDE. 
+
+**Requirements**
+* Python3
+* GitHub account
+* Heroku account
+* Gitpod or an IDE of your choice
+* Stripe account
+* AWS Amazon account
+* Gmail account
+
+### Work With The Local Copy
+
+* Ensure you have all of the above requirements set up.
+* Go to the workspace of your local copy. In the CLI type: <code>pip3 install -r requirements.txt</code>
+* Set up the environment variables: 
+    - Create a `.gitignore` file in the root directory of the project. 
+    - Create a `.env.py` file. To this add the following environmental variables.
+
+    ```
+    Import os
+    os.environ("SECRET_KEY_MS4", "Added by developer")
+    os.environ("STRIPE_PUBLIC_KEY", "Added by developer")
+    os.environ("STRIPE_SECRET_KEY", "Added by developer")
+    os.environ("STRIPE_WH_SECRET", "Added by developer")
+    os.environ("DATABASE_URL", "Added by developer")
+    ```
+    - As an alternative to storing these enviromental variables in env.py, if you are working with Gitpod these can be stored in account settings accessed by visiting your workspaces. Click the profile icon, add the variables here and then correctly reference these within settings.
+* Add the env.py file to gitignore.
+* Next perform migrations to create the database. Do this by running the command <code>python3 manage.py makemigrations</code> followed by <code>python3 manage.py migrate</code>
+* Create a superuser to have access to the admin panel. <code>python3 manage.py createsuperuser</code>
+* Now run the app locally using <code>python3 manage.py runserver</code>
 
 ### Heroku Deployment 
 
-**Prior to running Heroku, set up your workspace.**
+* To deploy to Heroku, log in or sign up and create a new app.
+* Complete the information regarding location and app name.
+* Once this is done, go to resources and search for postgres and add this to your app.
+* In your CLI install dj_database_url and psycopg2 so that you can use Postgres on your deployed site, install these using the following 
+  <code>pip3 install dj_database_url
+  pip3 install psycopg2</code>
+* Log in using the CLI <code>heroku login -i</code>
+* Migrate the database to postgres using <code>heroku run python manage.py migrate</code>
+* Install gunicorn using <code>pip3 install gunicorn</code>
+* Create a file called Procfile and ensure this is in it: 
+```
+web: gunicorn name_of_application.wsgi:application
+```
+* In settings set allowed hosts using 
+```
+ ALLOWED_HOSTS = ['app-name.herokuapp.com', 'localhost']
+```
+* In Heroku, select the deploy tab and under deployment method choose GitHub
+* In connect to GitHub enter your GitHub repository details and when you see the correct one click connect.
+* Go to the Settings tab and under Config Vars choose Reveal Config Vars, then enter the following config vars:
 
-* To do this, create a **requirements.txt** file to store the project dependencies. In the CLI type <code>pip freeze --local > requirements.txt</code>
 
-* Create a **Procfile**, this is so Heroku knows which file is the entry point. In the CLI type <code>python app.py > Procfile</code>
 
-* Vist [Heroku](https://id.heroku.com/login) and create a free account.
-
-* From the dashboard click the "new" button and create a new app. Name your app and select your region.
-
-* For GitHub deployment, go to the "deploy" section within Heroku.
-  - Search your repositorie name, when it is found click "connect".
-
-* In the "settings", choose "config vars". Click on "Reveal config vars" then enter the variables contained in your **env.py** file.
-  - These include "".
-
-* In the "deploy" section, scroll down to "automatic deployments" choose "enable automatic deploys" and then click "deploy branch".
-
-* Finally click "open app" and the app will be launched. 
+ 
 
 <br>
 
